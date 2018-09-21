@@ -17,3 +17,10 @@
 .util-backdrop {
     z-index: 0;
 }
+
+/* Utility: util-sticky-top
+ * Make the element sticky to the top of page. */
+.util-sticky-top {
+    position: sticky;
+    top: 0;
+}

@@ -30,5 +30,10 @@
         background-image: none; /* Firefox on mobile */
         border-radius: var(--radius); /* WebKit on mobile */
         outline: none; /* WebKit on desktop */
+
+        &--compact {
+            padding: var(--input-gap-vertical-compact)
+                var(--input-gap-horizontal-compact);
+        }
     }
 }

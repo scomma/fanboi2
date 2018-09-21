@@ -19,6 +19,14 @@
         background-color var(--animation-timing) var(--animation-timing-fn),
         border-color var(--animation-timing) var(--animation-timing-fn);
 
+    &--compact {
+        padding: var(--input-gap-vertical-compact) var(--input-gap-horizontal-compact);
+    }
+
+    &--emboss {
+        border-radius: var(--radius-large);
+    }
+
     @media (--mobile-viewport) {
         &--mobile-block {
             display: block;

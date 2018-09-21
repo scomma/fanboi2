@@ -5,6 +5,7 @@ repos:
         name: prettier
         entry: prettier --write
         language: node
+        language_version: system
         files: \.(scss|ts|js|json)$
         additional_dependencies: ['prettier']
   - repo: https://github.com/ambv/black
@@ -25,4 +26,5 @@ repos:
     hooks:
       - id: stylelint
         name: stylelint
+        language_version: system
         additional_dependencies: ['stylelint', 'stylelint-scss', 'stylelint-config-recommended-scss']

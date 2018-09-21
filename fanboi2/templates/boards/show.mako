@@ -5,11 +5,10 @@
 <%def name='title()'>${board.title}</%def>
 % for topic in topics:
     <div data-topic="${topic.id}">
-        <div class="panel panel--bordered util-padded">
+        <div class="panel panel--shadowed util-padded">
             <div class="container">
                 <h3 class="panel__item util-text-normal"><a href="${request.route_path('topic_scoped', board=board.slug, topic=topic.id, query='recent')}">${topic.title}</a></h3>
-                <p class="panel__item">Last posted ${datetime.render_datetime(topic.meta.posted_at)}</p>
-                <p class="panel__item">Total of ${topic.meta.post_count} posts</p>
+                <p class="panel__item">${topic.meta.post_count} posts at ${datetime.render_datetime(topic.meta.posted_at)}</p>
             </div>
         </div>
         % for p in topic.recent_posts(5):

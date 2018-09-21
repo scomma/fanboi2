@@ -45,5 +45,12 @@
                 color: var(--topaz-white);
             }
         }
+
+        &--emboss {
+            background-color: var(--topaz-white);
+            border-color: var(--topaz-white);
+            box-shadow: 0 1px 3px var(--topaz-shadow2);
+            color: var(--topaz-gray2);
+        }
     }
 }
